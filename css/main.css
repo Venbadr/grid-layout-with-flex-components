@@ -16,7 +16,7 @@ body {
 
 .emoji a {
   text-decoration: none;
-  background-color: #781BAA;
+  background-color: #781baa;
   color: white;
   padding: 1rem;
   border-radius: 8px;
@@ -26,22 +26,33 @@ body {
   font-size: 4rem;
 }
 
+/* styling the emojies cards */
+
 .emojis {
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem
-  
-  
+  gap: 1rem;
 }
+/* styling inside the cards */
 
 .emoji {
   display: flex;
-  flex-direction: column; 
-  
+  flex-direction: column;
 }
 
 .icon {
-  display:flex;
-  justify-content: center
+  display: flex;
+  justify-content: center;
 }
 
+/* making the emoji above the h2 */
+
+.emoji .icon {
+  order: -1;
+}
+
+/* making the buttons aligned and not moving  */
+
+.emoji a {
+  margin-top: auto;
+}
